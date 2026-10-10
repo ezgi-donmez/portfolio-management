@@ -1,4 +1,4 @@
-"""DS588: 01.04.2026–01.10.2026 (iki tarih dahil).
+"""01.04.2026–01.10.2026 (iki tarih dahil).
 Cikti: Data/Raw/us/us_etf_daily_<START>_<END>.csv
 Dosya adi tarih araligini icerir; farkli aralikla calistirmak eski dosyaya
 eklemez, yeni dosya acar (eski 1 aylik dosyayla karismaz).
