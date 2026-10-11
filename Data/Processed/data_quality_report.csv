@@ -1,0 +1,24 @@
+﻿fund_type,source_file,first_date,last_date,trading_days,funds,rows,looks_incomplete,section,market,step,reason,removed,remaining
+BYF,Fon_Verileri_CSV_Tum_Veri_2026-10-10_nisan_borsa.csv,2026-04-01,2026-04-30,21.0,30.0,630.0,False,tr_file_coverage,,,,,
+BYF,Fon_Verileri_CSV_Tum_Veri_2026-10-10_mayıs_borsa.csv,2026-05-04,2026-05-26,16.0,30.0,480.0,False,tr_file_coverage,,,,,
+BYF,Fon_Verileri_CSV_Tum_Veri_2026-10-10_haziran_borsa.csv,2026-06-01,2026-06-30,22.0,30.0,660.0,False,tr_file_coverage,,,,,
+BYF,Fon_Verileri_CSV_Tum_Veri_2026-10-10_temmuz_borsa.csv,2026-07-01,2026-07-31,22.0,30.0,660.0,False,tr_file_coverage,,,,,
+BYF,Fon_Verileri_CSV_Tum_Veri_2026-10-10_agustos_borsa.csv,2026-08-03,2026-08-31,21.0,30.0,630.0,False,tr_file_coverage,,,,,
+BYF,Fon_Verileri_CSV_Tum_Veri_2026-10-09_eylul_borsa.csv,2026-09-01,2026-10-01,23.0,36.0,767.0,False,tr_file_coverage,,,,,
+YAT,Fon_Verileri_CSV_Tum_Veri_2026-10-10_nisan_menkul.csv,2026-04-01,2026-04-30,21.0,1989.0,41614.0,False,tr_file_coverage,,,,,
+YAT,Fon_Verileri_CSV_Tum_Veri_2026-10-10_mayıs_menkul.csv,2026-05-04,2026-05-26,16.0,1996.0,31832.0,False,tr_file_coverage,,,,,
+YAT,Fon_Verileri_CSV_Tum_Veri_2026-10-10_haziran_menkul.csv,2026-06-01,2026-06-30,22.0,2013.0,44093.0,False,tr_file_coverage,,,,,
+YAT,Fon_Verileri_CSV_Tum_Veri_2026-10-10_temmuz_menkul.csv,2026-07-01,2026-07-31,22.0,2026.0,44413.0,False,tr_file_coverage,,,,,
+YAT,Fon_Verileri_CSV_Tum_Veri_2026-10-10_agustos_menkul.csv,2026-08-03,2026-08-31,21.0,2037.0,42523.0,False,tr_file_coverage,,,,,
+YAT,Fon_Verileri_CSV_Tum_Veri_2026-10-09_eylul_menkul.csv,2026-09-01,2026-10-01,23.0,2044.0,46836.0,False,tr_file_coverage,,,,,
+,,,,,,,,eligibility_funnel,TR,all funds in the exports,,0.0,2085.0
+,,,,,,,,eligibility_funnel,TR,not a private fund (ÖZEL),"access: only for specific investors, a normal investor cannot buy it",484.0,1601.0
+,,,,,,,,eligibility_funnel,TR,not a hedge fund (SERBEST),access: only for qualified investors,827.0,774.0
+,,,,,,,,eligibility_funnel,TR,coverage >= 98%,data: not enough prices to simulate over the window,67.0,707.0
+,,,,,,,,eligibility_funnel,TR,no zero/invalid prices,data: a zero or missing price is not a real price,0.0,707.0
+,,,,,,,,eligibility_funnel,TR,no daily jump > 25%,data: such a jump is almost always a price error or reset,0.0,707.0
+,,,,,,,,eligibility_funnel,US,all ETFs in the download,,0.0,5746.0
+,,,,,,,,eligibility_funnel,US,not leveraged / inverse,project rule: no short selling or borrowing,819.0,4927.0
+,,,,,,,,eligibility_funnel,US,coverage >= 98%,data: not enough prices to simulate over the window,556.0,4371.0
+,,,,,,,,eligibility_funnel,US,no daily jump > 40%,data: such a jump is almost always a price error or split,3.0,4368.0
+,,,,,,,,eligibility_funnel,US,traded on all of the first 20 days,tradability: with zero volume the close is not an executable price,167.0,4201.0
